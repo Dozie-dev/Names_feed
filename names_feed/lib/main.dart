@@ -1,6 +1,7 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/rendering.dart';
+import 'package:names_feed/page.dart';
+// import 'package:flutter/page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -60,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
         page = GeneratorPage();
       // break;
       case 1:
-        page = Placeholder();
+        page = FavoritesPage();
       // break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
